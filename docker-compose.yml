@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  express_service_wizard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: express_service_wizard
+    image: express_service_wizard
+    volumes:
+      - .:/code
