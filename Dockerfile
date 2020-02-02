@@ -6,4 +6,4 @@ RUN npm install -g express-generator
 
 ADD . /code
 
-ENTRYPOINT ["express", "--no-view", "--git", "YourExpressApplication"]
+ENTRYPOINT ["bash", "/code/scripts/create_app.sh"]
